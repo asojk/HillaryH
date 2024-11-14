@@ -37,12 +37,13 @@ body {
 .skill-set {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-center;
   padding-left: 0;
 }
 
 .skill-set li:hover {
   background: #3498db;
+  cursor: default;
 }
 
 .wrapper {
@@ -83,8 +84,7 @@ body {
 }
 
 .me-img {
-  background: url(https://media-exp1.licdn.com/dms/image/C4E03AQGnLq_IB_mf8Q/profile-displayphoto-shrink_400_400/0/1631022739752?e=1648684800&v=beta&t=eICUjHeH_g9GQEItmEMK1j2gCADwqfjrlccSD_5za58)
-    no-repeat center center;
+  background:no-repeat center center;
   background-size: 100%;
   background-position: 0px;
   border-radius: 100%;
@@ -145,9 +145,7 @@ body {
 
 ul {
   list-style-type: none;
-  margin-top: -10px;
   max-width: 570px;
-  padding: 0;
 }
 
 .skill-set li {
@@ -159,6 +157,9 @@ ul {
   margin: 5px;
   padding: 10px;
   text-align: justify;
+  width: fit-content;
+  max-width: 8rem;
+  height:fit-content;
 }
 
 @media screen and (max-width: 48em) {
@@ -200,7 +201,7 @@ ul {
   }
 }
 .clearfix:after {
-  content: ' '; /* Older browser do not support empty content */
+  content: ' ';
   visibility: hidden;
   display: block;
   height: 0;

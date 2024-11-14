@@ -1,4 +1,3 @@
-import './App.css'
 import ResumeComponent from './res.tsx';
 
 function App() {
